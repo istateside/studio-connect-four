@@ -2,6 +2,13 @@
 
 This is Movable Ink Cartridge that goes with the Studio Connect Four app.
 
+This app expects an endpoint available at `miconnectfour.localtunnel.me`, which
+should hit the Go services running on port 1990 from
+`github.com/istateside/connect-four`. You can use localtunnel to have this
+running locally.
+
+`lt --port 1990 --subdomain miconnectfour`
+
 ## Updating in dev
 
 First, you need to have the `push-dev-cartridge` script. You can get it like so:
