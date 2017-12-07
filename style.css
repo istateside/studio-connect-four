@@ -1,0 +1,35 @@
+.tool-avatar {
+  background-size: cover;
+}
+
+.tool-tweet {
+  word-wrap: break-word;
+}
+
+.tool-retweets, .tool-favorites {
+  white-space: nowrap;
+}
+
+.tool-retweets svg,
+.tool-favorites svg {
+  margin-right: 8%;
+}
+
+.tool-full-name svg.verified {
+  position: relative;
+  top: -2px;
+}
+
+svg.verified #fill-color {
+  fill: #88C9F9;
+}
+
+.tool-full-name *,
+.tool-retweets *,
+.tool-favorites * {
+  vertical-align: middle;
+}
+
+.tool-tweet-image {
+  overflow: hidden;
+}

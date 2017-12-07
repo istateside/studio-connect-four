@@ -1,0 +1,46 @@
+---
+name: Connect Four
+authors:
+- Movable Ink <dev@movableink.com>
+icon: //movableink-public-assets-production.s3.amazonaws.com/cartridge-icons/map.svg
+description: Pretty sneaky, sis
+documentation: https://support.movableink.com/hc/en-us/articles/115007000848
+category: "content: social"
+icon_v2: twitter
+width: 100
+height: 600
+
+query_params:
+  - game_id
+  - player_id
+  - column_idx
+fields:
+- name: gameIdx
+  type: number
+  label: Game ID
+  value: 1
+  min: 1
+- name: colIdx
+  type: number
+  label: Column Number
+  value: 1
+  min: 1
+  max: 7
+studio_options:
+  tools:
+    - type: rectangle
+      name: Game Space
+      icon: vector-tool
+      class_names: rectangle
+      fields:
+        - name: rowIdx
+          type: number
+          min: 1
+          max: 6
+          label: "Row #"
+      defaults:
+        width: 90
+        height: 90
+        borderRadius: 45
+        borderWidth: 2
+        borderColor: "#000000"
